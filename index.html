@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="row">
+            <div class="input" id="input"></div>
+            <div onclick="clean()"  class="btn" id="clean">C</div>
+        </div>
+        <div class="row">
+            <div onclick="addNum(id)" class="btn" id="1">1</div>
+            <div onclick="addNum(id)" class="btn" id="2">2</div>
+            <div onclick="addNum(id)" class="btn" id="3">3</div>
+            <div onclick="addOperator('/')" class="btn" id="division">/</div>
+        </div>
+        <div class="row">
+            <div onclick="addNum(id)" class="btn" id="4">4</div>
+            <div onclick="addNum(id)" class="btn" id="5">5</div>
+            <div onclick="addNum(id)" class="btn" id="6">6</div>
+            <div onclick="addOperator('*')" class="btn" id="multiply">*</div>
+        </div>
+        <div class="row">
+            <div onclick="addNum(id)" class="btn" id="7">7</div>
+            <div onclick="addNum(id)" class="btn" id="8">8</div>
+            <div onclick="addNum(id)" class="btn" id="9">9</div>
+            <div onclick="addOperator('-')" class="btn" id="minus">-</div>
+        </div>
+        <div class="row">
+            <div onclick="addNum(id)" class="btn" id="0">0</div>
+            <div onclick="addNum(id)" class="btn" id=".">.</div>
+            <div onclick="result()" class="btn" id="equal">=</div>
+            <div onclick="addOperator('+')" class="btn" id="plus">+</div>
+        </div>
+        
+        
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
